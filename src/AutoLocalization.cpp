@@ -44,9 +44,9 @@ AutoLocalization::AutoLocalization()
         for (size_t i = 0; i < 36; i++) {
             m_lastKnownPose.pose.covariance[i] = 0.0;
         }
-        m_lastKnownPose.pose.covariance[0] = 0.5;  // x
-        m_lastKnownPose.pose.covariance[7] = 0.5;  // y
-        m_lastKnownPose.pose.covariance[35] = 0.5; // yaw
+        m_lastKnownPose.pose.covariance[0] = 0.0;  // x
+        m_lastKnownPose.pose.covariance[7] = 0.0;  // y
+        m_lastKnownPose.pose.covariance[35] = 0.0; // yaw
 
         rclcpp::sleep_for(std::chrono::seconds(1));
         publishInitialPose();

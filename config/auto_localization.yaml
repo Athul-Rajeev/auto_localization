@@ -1,0 +1,3 @@
+auto_localization:
+  database_file: "data/pose.db"
+  pose_topic: "/amcl_pose"
